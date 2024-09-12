@@ -12,7 +12,7 @@ const ContactContent = () => {
               <h3 className="text-white mb-30">Contact Information</h3>
               <p className="text-white">
                 For any inquiries or support, feel free to reach out to us.
-                We're here to help and answer any questions you may have.
+                We are here to help and answer any questions you may have.
               </p>
 
               <ul className="mt-40 mb-40">
@@ -150,7 +150,7 @@ const ContactContent = () => {
                   data-aos-duration="1500"
                 >
                   Take the first step towards transforming your business.
-                  Whether you're ready to begin or have questions, we're here to
+                  Whether you are ready to begin or have questions, we are here to
                   guide you every step of the way.
                 </p>
               </div>

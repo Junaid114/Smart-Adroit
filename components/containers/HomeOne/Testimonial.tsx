@@ -322,7 +322,7 @@ const Testimonial = () => {
                       </div>
                       <p className="mt-30">
                         “I hired Smart Adroit to develop a custom property
-                        management system, and I couldn't be happier with the
+                        management system, and I could not be happier with the
                         results. The project was complex, involving everything
                         from individual property management to agency-level
                         operations, along with a comprehensive lead management

@@ -470,7 +470,7 @@ const Banner = () => {
                     className="mt-20"
                   >
                     Stay ahead of the curve with our state-of-the-art software
-                    solutions. Whether you're looking to streamline operations,
+                    solutions. Whether you are looking to streamline operations,
                     enhance productivity, or drive innovation, Smart Adroit
                     Technologies has the expertise to make it happen.
                   </p>
