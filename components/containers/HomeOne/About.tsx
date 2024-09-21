@@ -11,7 +11,6 @@ import Three from "@/public/images/icon/section-title.png";
 import Four from "@/public/images/icon/about-icon1.png";
 import Five from "@/public/images/icon/about-icon2.png";
 import Seven from "@/public/images/about/about-info1.jpg";
-import Six from "@/public/images/about/about-img2.jpg";
 
 const About = () => {
   const [isOpen, setOpen] = useState(false);
@@ -127,19 +126,11 @@ const About = () => {
                 </Link>
                 <div className="d-flex gap-2 align-items-center">
                   <div style={{height:"70px",width:"70px"}}>
-                  <Image src={Seven} alt="Image" priority width={70} height={50} />
+                  <Image src={Seven} alt="Image" priority width={80} height={50} />
                   </div>
-               
                   <div className="info"  style={{marginTop:"25px"}}>
                     <h5>Sajid Ali</h5>
-                    <span className="sm-font">CTO</span>
-                  </div>
-                </div>
-                <div className="d-flex gap-2 align-items-center" style={{marginTop:"25px"}}>
-                  <Image src={Six} alt="Image" priority width={70} height={70} />
-                  <div className="info">
-                    <h5>Fayyaz Ahmed</h5>
-                    <span className="sm-font">Co, Founder</span>
+                    <span className="sm-font"> Founder/CEO</span>
                   </div>
                 </div>
               </div>

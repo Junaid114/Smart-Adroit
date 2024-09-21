@@ -123,7 +123,7 @@ const Header = () => {
             </div>
             <div className="d-none d-lg-inline-block">
               <Link href="contact" className="btn-one">
-                Get A Quote <i className="fa-regular fa-arrow-right-long"></i>
+              Schedula Strategy Call<i className="fa-regular fa-arrow-right-long"></i>
               </Link>
             </div>
             <div className="bars d-block d-lg-none">

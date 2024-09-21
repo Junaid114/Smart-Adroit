@@ -57,7 +57,7 @@ const Footer = () => {
               <Image src={Logo} alt="Image" priority />
             </Link>
             <p>
-            Bulilding 34, street 1B , Ali Garden  Madinah Town Fasilabad Punjab Pakistan
+           Faisalabad Punjab Pakistan
             </p>
             <div className="social-icon">
               {/* <Link href="/">
@@ -157,7 +157,7 @@ const Footer = () => {
           >
             <h3 className="footer-title">Contact Us</h3>
             <p className="mb-20">
-             Ali Garden  Madinah Town Fasilabad
+              Fasilabad, Punjab, Pakistan
             </p>
             <ul className="footer-contact">
               <li>

@@ -103,7 +103,7 @@ const ContactContent = () => {
                     <span className="text-white">Location</span>
                     <h5 className="mt-1">
                       <Link className="text-white" href="tel:+2085550112">
-                        Madinah Town Faisalabad
+                        Faisalabad, Punjab, Pakistan
                       </Link>
                     </h5>
                   </div>
