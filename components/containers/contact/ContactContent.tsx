@@ -1,8 +1,60 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import One from "@/public/images/icon/section-title.png";
+import { useState } from "react";
+
+
+
 
 const ContactContent = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleNameChange = (e:any) => setName(e.target.value);
+  const handleEmailChange = (e:any) => setEmail(e.target.value);
+  const handleMessageChange = (e:any) => setMessage(e.target.value);
+
+
+  const handleSubmit = async (e:any) => {
+    // e.preventDefault();
+    setIsSubmitting(true);
+    setResponseMessage("");
+    e.preventDefault();
+
+ const formdata={ name,email,message}
+    try {
+      
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formdata),
+      });
+
+      if (response.ok) {
+        setEmail('')
+        setName('')
+        setMessage('')
+        setResponseMessage("Your message has been sent successfully!");
+      } else {
+        setResponseMessage("Failed to send your message. Please try again.");
+      }
+    } catch (error) {
+      setResponseMessage("An error occurred. Please try again later.");
+    }
+
+    setIsSubmitting(false);
+  };
+
+
+
   return (
     <section className="contact-area pt-120 pb-120">
       <div className="container">
@@ -155,7 +207,7 @@ const ContactContent = () => {
                 </p>
               </div>
               <div className="contact__form">
-                <form action="#">
+              <form onSubmit={handleSubmit} className="contact__form">
                   <div className="row">
                     <div className="col-6">
                       <label htmlFor="name">Your Name*</label>
@@ -164,6 +216,8 @@ const ContactContent = () => {
                         className="bg-transparent bor"
                         type="text"
                         placeholder="Your Name"
+                        value={name}
+                        onChange={handleNameChange}
                       />
                     </div>
                     <div className="col-6">
@@ -173,6 +227,9 @@ const ContactContent = () => {
                         id="email"
                         type="email"
                         placeholder="Your Email"
+                        value={email}
+          onChange={handleEmailChange}
+                  required
                       />
                     </div>
                   </div>
@@ -182,14 +239,16 @@ const ContactContent = () => {
                       className="bg-transparent bor"
                       id="massage"
                       placeholder="Write Message"
+                      value={message}
+          onChange={handleMessageChange}
                     ></textarea>
                   </div>
                   <div className="btn-two">
                     <span className="btn-circle"></span>
-                    <Link href="/" className="btn-one">
+                    <button  className="btn-one" type='submit'>
                       Send Message{" "}
                       <i className="fa-regular fa-arrow-right-long"></i>
-                    </Link>
+                    </button>
                   </div>
                 </form>
               </div>

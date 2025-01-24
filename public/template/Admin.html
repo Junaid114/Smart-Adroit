@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Details - SmartAdroit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 70%;
+      margin: 30px auto;
+      padding: 0;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      background-color: #0048aa; /* Solid blue header */
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+    .header h2 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .content {
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .content ul {
+      padding-left: 20px;
+    }
+    .content ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #0048aa;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #0048aa;
+      color: #ffffff;
+      font-size: 14px;
+      border-radius: 0 0 8px 8px;
+    }
+    .footer strong {
+      color: #00b4ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>SmartAdroit</h2>
+    </div>
+    <div class="content">
+      <p>Dear Admin,</p>
+      <p>You have received a new message from a client. Below are the details:</p>
+      <ul>
+        <li><strong>Name:</strong> {{Name}}</li>
+        <li><strong>Email:</strong> {{email}}</li>
+        <li><strong>Message:</strong> {{message}}</li>
+      </ul>
+    </div>
+    <div class="footer">
+      &#169; 2024 <strong>SmartAdroit Solutions</strong>. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
